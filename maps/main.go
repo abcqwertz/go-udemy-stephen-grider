@@ -17,5 +17,11 @@ func main() {
 	colors2["white"] = "#ffffff"
 	delete(colors, "black")
 
-	fmt.Println(colors2, colors)
+	printMap(colors)
+}
+
+func printMap(m map[string]string) {
+	for color, value := range m {
+		fmt.Println("color:", color, ",value:", value)
+	}
 }
