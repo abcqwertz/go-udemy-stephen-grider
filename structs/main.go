@@ -30,6 +30,6 @@ func (pointerToPerson *person) updateName(newFirstName string) {
 	(*pointerToPerson).firstName = newFirstName
 }
 
-func (pointerToPerson person) print() {
-	fmt.Printf("%+v\n", pointerToPersion)
+func (p person) print() {
+	fmt.Printf("%+v\n", p)
 }
